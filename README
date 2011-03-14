@@ -1,0 +1,8 @@
+This is a program used to perform relaxation method
+
+simply type ``make" to compile the program. 
+and then type:
+./relaxation -p -i -a jacobi -t 0.5
+to run an example
+
+More details about the program is in the manual.pdf, and that file is also the report for this project
