@@ -20,6 +20,8 @@ int main(int argc, char *argv[])
     FILE *pipe = popen("gnuplot -persist","w");
     FILE *fp;
     FILE *result, *fmax, *favg;
+	extern char* optarg;
+	extern int optopt;
     int num_iter = 100000; /* default maximum iteration number is 10,000*/
     double tolerance = 0.0005; /* default tolerance is 0.05%*/
     int i,j,k,l;
