@@ -4,6 +4,7 @@
 
 #include "relaxation.h"
 #include <stdlib.h>
+#include <sys/types.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
@@ -16,7 +17,6 @@ int compareDecide(double* com, int row, int col,  double* maximum, double* avg);
 
 int main(int argc, char *argv[])
 {
-
     FILE *pipe = popen("gnuplot -persist","w");
     FILE *fp;
     FILE *result, *fmax, *favg;
